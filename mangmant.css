@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#222;
+    color: #fff ;
+    font-family: sans-serif;
+}
+
+.dark{
+    background: #ffffff;
+    color: #000;
+}
+.crud{
+ width: 80%;
+ margin: auto;   
+}
+.head{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    transition: 0.28s;
+}
+.dark input{
+    background: #ccc;
+    color: #111;
+}
+input:focus{
+    background: #000;
+    transform: scale(1.0777);
+}
+.dark input:focus{
+    background: rgb(150, 150, 150);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: yellow;
+    padding: 4px 2px;
+    border-radius: 4px;
+}
+.dark #total{
+    background: midnightblue;
+}
+#total::before{
+    content: "Total: ";
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: darkblue;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 0.24s;
+}
+.dark button{
+    background: rgb(100, 0, 194);
+}
+button:hover{
+    background: rgb(17, 17, 255);
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.dark button:hover{
+    background: rgb(47, 0, 85);
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th{
+    text-transform: uppercase; 
+    padding: 5px;
+}
+table td{
+    padding: 5px;
+}
+#deletall{
+    margin: 5px 0;
+}
+.togg{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.1)
+    -5px -5px 10px #fff;
+}
+.dark .togg{
+    background: #dddddd;
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0,0.1)
+    -5px -5px 10px rgb(255, 255, 255);
+}
